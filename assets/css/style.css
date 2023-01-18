@@ -116,6 +116,7 @@ body {
 
 .preview-img img {
   max-width: 490px;
+  min-width: 490px;
   max-height: 335px;
   height: 100%;
   object-fit: contain;
