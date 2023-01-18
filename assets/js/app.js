@@ -26,6 +26,7 @@ const loadImage = () => {
   if (!file) return; // return if user hasn´t selected file
   previewImg.src = URL.createObjectURL(file); //pasing file url as preview img src
   previewImg.addEventListener("load", () => {
+    resetBtn.click(); // clicking reset btn, so the filtrer value reset if the user selected new img
     container.classList.remove("disable");
   });
 };
