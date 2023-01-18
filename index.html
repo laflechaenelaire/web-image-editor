@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Image Editor</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container disable">
+    <h2>Easy Image Editor</h2>
+    <div class="wrapper">
+      <div class="editor-panel">
+        <div class="filter">
+          <label for="" class="title">Filters</label>
+          <div class="options">
+            <button id="brightness" class="active">Brightness</button>
+            <button id="saturation">Saturation</button>
+            <button id="inversion">Inversion</button>
+            <button id="grayscale">Grayscale</button>
+          </div>
+          <div class="slider">
+            <div class="filter-info">
+              <p class="name">Brightness</p>
+              <p class="value">100%</p>
+            </div>
+            <input type="range" value="100" max="200" class="range">
+          </div>
+        </div>
+        <div class="rotate">
+          <label for="" class="title">Rotate & Flip</label>
+          <div class="options">
+            <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+            <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="horizontal"><i class="bx bx-reflect-horizontal"></i></button>
+            <button id="vertical"><i class="bx bx-reflect-vertical"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="preview-img">
+        <img class="image-placeholder" src="/assets/images/image-placeholder.png" alt="">
+      </div>
+    </div>
+    <div class="controls">
+      <button class="reset-filter">Reset Filters</button>
+      <div class="row">
+        <input type="file" class="file-input" accept=" image/*" hidden>
+        <button class="choose-img">Choose Image</button>
+        <button class="save-img">Save Image</button>
+
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
